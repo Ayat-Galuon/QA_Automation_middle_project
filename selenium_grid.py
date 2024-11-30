@@ -24,7 +24,6 @@ driver=webdriver.Remote("http://localhost:4444/wd/hub",options=options)
 
 service=ChromeService(ChromeDriverManager().install())
 driver=webdriver.Chrome()
-#driver=webdriver.Edge()
 
 driver.get("https://automationexercise.com/")
 driver.set_window_size(1536,808)
