@@ -20,6 +20,7 @@ class TestYourInformation():
   def teardown_method(self, method):
     self.driver.quit()
 
+  @pytest.mark.good
   # Test that the checkout page accepts valid information.
   def test_validin_formation(self):
     self.driver.find_element(By.CSS_SELECTOR, "*[data-test=\"username\"]").send_keys("standard_user")

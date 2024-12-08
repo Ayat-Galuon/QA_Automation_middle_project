@@ -23,6 +23,7 @@ class TestError():
   
   #This test is to verify that the checkout page displays the correct user information.
 
+  @pytest.mark.bad
   def test_error1(self):
     self.driver.find_element(By.CSS_SELECTOR, "*[data-test=\"username\"]").send_keys("problem_user")
     self.driver.find_element(By.CSS_SELECTOR, "*[data-test=\"password\"]").send_keys("secret_sauce")
